@@ -9,7 +9,7 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	showInSidebar: true,
 
 	// 使用方式："meting" 使用 Meting API，"local" 使用本地音乐列表
-	mode: "meting",
+	mode: "local",
 
 	// 默认音量 (0-1)
 	volume: 0.7,
@@ -48,10 +48,38 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	local: {
 		playlist: [
 			{
-				name: "使一颗心免于哀伤",
-				artist: "知更鸟 / HOYO-MiX / Chevy",
-				url: "/assets/music/使一颗心免于哀伤-哼唱.mp3",
-				cover: "/assets/music/cover/109951169585655912.webp",
+				name: "LOVE2000",
+				artist: "遠野ひかる",
+				url: "/assets/music/m1.mp4",
+				cover: "/assets/music/f1.jpg",
+				lrc: "",
+			},
+			{
+				name: "黒のバースデイ|黑色生日",
+				artist: "佐々木莉子",
+				url: "/assets/music/m2.mp4",
+				cover: "/assets/music/f2.jpg",
+				lrc: "",
+			},
+			{
+				name: "Masquerade Rhapsody Request|假面舞会狂想曲",
+				artist: "佐々木莉子",
+				url: "/assets/music/m3.mp4",
+				cover: "/assets/music/f3.jpg",
+				lrc: "",
+			},
+			{
+				name: "キリトリセン|剪切线",
+				artist: "小日向美香",
+				url: "/assets/music/m4.mp4",
+				cover: "/assets/music/f4.png",
+				lrc: "",
+			},
+			{
+				name: "命に嫌われている|被生命所厌恶",
+				artist: "花谱/春猿火",
+				url: "/assets/music/m5.mp4",
+				cover: "/assets/music/f5.png",
 				lrc: "",
 			},
 		],
