@@ -8,8 +8,7 @@ export const sponsorConfig: SponsorConfig = {
 	description: "",
 
 	// 打赏用途说明
-	usage:
-		"。",
+	usage: "。",
 
 	// 是否显示打赏者列表
 	showSponsorsList: false,
@@ -21,10 +20,8 @@ export const sponsorConfig: SponsorConfig = {
 	showButtonInPost: false,
 
 	// 打赏方式列表
-	methods: [
-	],
+	methods: [],
 
 	// 打赏者列表（可选）
-	sponsors: [
-	],
+	sponsors: [],
 };
