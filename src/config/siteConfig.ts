@@ -9,7 +9,7 @@ export const siteConfig: SiteConfig = {
 	title: "Synitis的博客",
 
 	// 站点副标题
-	subtitle: "Demo site",
+	subtitle: "主页",
 
 	// 站点 URL
 	site_url: "https://BOMEN2233.github.io",
