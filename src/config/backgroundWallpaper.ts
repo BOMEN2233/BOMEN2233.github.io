@@ -93,7 +93,7 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 				"Your bloom unnoticed",
 				"Your withering unknown",
 				"Your thoughts unremembered",
-				"What are you?",
+				"Nay Nay Nay"
 			],
 			// 主页横幅副标题字体大小
 			subtitleSize: "1.5rem",

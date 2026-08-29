@@ -81,6 +81,54 @@ export const fontsList: FontDefinition[] = [
 		},
 		fallbacks: ["sans-serif"],
 	},
+
+	{
+    name: "FacultyGlyphic-Regular",                        // 字体名称（随意命名）
+    cssVariable: "--font-FacultyGlyphic-Regular",         // CSS 变量名，必须以 -- 开头
+    provider: "local",                     // 使用本地字体
+    weights: ["400"],                      // 字重（按需）
+    styles: ["normal"],                    // 样式
+    fallbacks: ["sans-serif"],             // 回退字体
+    options: {
+      variants: [
+        {
+          src: ["./public/assets/fonts/FacultyGlyphic-Regular.ttf"],  // 字体文件路径（相对于项目根目录）
+        },
+      ],
+    },
+  	},
+
+	{
+    name: "OpenSans-Bold",                        // 字体名称（随意命名）
+    cssVariable: "--font-OpenSans-Bold",         // CSS 变量名，必须以 -- 开头
+    provider: "local",                     // 使用本地字体
+    weights: ["400"],                      // 字重（按需）
+    styles: ["normal"],                    // 样式
+    fallbacks: ["sans-serif"],             // 回退字体
+    options: {
+      variants: [
+        {
+          src: ["./public/assets/fonts/OpenSans-Bold.ttf"],  // 字体文件路径（相对于项目根目录）
+        },
+      ],
+    },
+  	},
+
+	{
+    name: "MapleMono-NF-CN-Thin",                        // 字体名称（随意命名）
+    cssVariable: "--font-MapleMono-NF-CN-Thin",         // CSS 变量名，必须以 -- 开头
+    provider: "local",                     // 使用本地字体
+    weights: ["400"],                      // 字重（按需）
+    styles: ["normal"],                    // 样式
+    fallbacks: ["sans-serif"],             // 回退字体
+    options: {
+      variants: [
+        {
+          src: ["./public/assets/fonts/MapleMono-NF-CN-Thin.ttf"],  // 字体文件路径（相对于项目根目录）
+        },
+      ],
+    },
+  	},
 ];
 
 // ─── 字体选择与区域覆盖 ─────────────────────────────────────
@@ -89,18 +137,18 @@ export const fontConfig: FontSelectionConfig = {
 	enable: true,
 	// 当前选择的字体 CSS 变量名（对应上方 fonts 中的 cssVariable）
 	// 使用 "system" 表示系统字体（不加载任何自定义字体）
-	selected: ["system"],
+	selected: ["--font-OpenSans-Bold"],
 
 	// 各区域独立字体设置（填写上方 fonts 中的 cssVariable，留空则使用全局 selected 字体）
 	// 例如：bannerTitleFont: "--font-inter", 表示主页横幅主标题使用 Inter 字体
 	// 主页横幅主标题字体
-	bannerTitleFont: "--font-zen-maru-gothic",
+	bannerTitleFont: "--font-FacultyGlyphic-Regular",
 	// 主页横幅副标题字体
-	bannerSubtitleFont: "--font-inter",
+	bannerSubtitleFont: "--font-OpenSans-Bold",
 	// 导航栏标题字体
 	navbarTitleFont: "",
 	// 代码块字体（用于代码高亮和等宽字体场景）
-	codeFont: "--font-jetbrains-mono",
+	codeFont: "--font-MapleMono-NF-CN-Thin",
 
 	// 本地字体子集化配置（构建时由 scripts/subset-fonts.ts 处理）
 	// key 为 fonts 数组中对应的 cssVariable，value 为子集化选项
